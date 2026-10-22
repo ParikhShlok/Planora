@@ -12,11 +12,6 @@ import {
   Sparkles,
   ArrowRight,
   ArrowLeft,
-  Calendar,
-  MapPin,
-  Wallet,
-  Users,
-  Palette,
   Check,
 } from 'lucide-react';
 import {

@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { usePlanora } from '../../context/PlanoraContext';
 import {
-  Lightbulb,
   Palette,
   Utensils,
   Music,
   CloudRain,
-  ShieldCheck,
   Leaf,
   Clock,
   Sparkles,
@@ -216,7 +214,7 @@ export const IdeasTab: React.FC = () => {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {ideas.dayOfSchedule.map((item, idx) => (
+            {ideas.dayOfSchedule.map(item => (
               <div key={item.id} style={scheduleCardRowStyle}>
                 <div style={timeSlotBadgeStyle}>
                   <Clock size={13} color="var(--color-primary)" />

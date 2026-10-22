@@ -3,10 +3,8 @@ import { usePlanora } from '../../context/PlanoraContext';
 import {
   CalendarDays,
   PlusCircle,
-  CheckCircle2,
   AlertCircle,
   Clock,
-  Filter,
   Trash2,
   Calendar,
   X,

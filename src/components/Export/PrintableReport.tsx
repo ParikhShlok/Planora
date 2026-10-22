@@ -1,13 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { usePlanora } from '../../context/PlanoraContext';
 import {
   Printer,
   X,
-  Calendar,
-  MapPin,
-  Users,
-  Wallet,
-  Sparkles,
   Download,
 } from 'lucide-react';
 
@@ -18,10 +13,11 @@ interface PrintableReportProps {
 
 export const PrintableReport: React.FC<PrintableReportProps> = ({ isOpen, onClose }) => {
   const { activePlan, exportPlanJSON } = usePlanora();
+  const generatedDate = useMemo(() => new Date().toLocaleDateString(), []);
 
   if (!isOpen) return null;
 
-  const { intake, budgetBreakdown, timeline, vendors, ideas } = activePlan;
+  const { intake, budgetBreakdown, vendors, ideas } = activePlan;
   const currencySymbol = intake.currency === 'INR' ? '₹' : intake.currency === 'USD' ? '$' : '€';
 
   const handlePrint = () => {
@@ -71,7 +67,7 @@ export const PrintableReport: React.FC<PrintableReportProps> = ({ isOpen, onClos
               </div>
             </div>
             <div style={{ textAlign: 'right' }}>
-              <div style={docDateBadgeStyle}>Generated: {new Date().toLocaleDateString()}</div>
+              <div style={docDateBadgeStyle}>Generated: {generatedDate}</div>
               <div style={{ fontSize: '12px', color: '#64748b', marginTop: '4px' }}>
                 Setting: {intake.isIndoorOutdoor.toUpperCase()}
               </div>

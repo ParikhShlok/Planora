@@ -5,11 +5,6 @@ import {
   Send,
   Cpu,
   CheckCircle,
-  HelpCircle,
-  Lightbulb,
-  ArrowRight,
-  ShieldCheck,
-  RefreshCw,
 } from 'lucide-react';
 
 const SUGGESTED_QUERIES = [

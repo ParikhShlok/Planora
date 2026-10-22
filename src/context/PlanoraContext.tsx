@@ -4,7 +4,6 @@ import {
   EventIntake,
   BudgetItem,
   TimelineTask,
-  VendorItem,
   VendorQuote,
   BookingStatus,
   ChatMessage,
@@ -13,8 +12,6 @@ import { getDemoPlans, createInitialPlan } from '../data/demoPlans';
 import { recalculateBudget } from '../engine/budgetCalculator';
 import { recalculateTimelineDates } from '../engine/timelineEngine';
 import { getAIPlannerResponse } from '../engine/aiProvider';
-import { generateVendorChecklist } from '../engine/vendorEngine';
-import { generatePersonalizedIdeas } from '../engine/ideasEngine';
 
 const STORAGE_KEY = 'planora_ai_plans_v1';
 const ACTIVE_ID_KEY = 'planora_ai_active_id_v1';

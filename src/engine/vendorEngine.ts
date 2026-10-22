@@ -1,4 +1,4 @@
-import { VendorItem, EventType, EventIntake, VendorPriority } from '../types';
+import { VendorItem, EventIntake, VendorPriority } from '../types';
 
 interface VendorTemplate {
   category: string;

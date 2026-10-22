@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { usePlanora } from '../../context/PlanoraContext';
 import {
-  Wallet,
   PlusCircle,
-  TrendingDown,
-  AlertCircle,
   Shield,
   Trash2,
   Edit2,

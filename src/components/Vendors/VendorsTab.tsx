@@ -5,16 +5,11 @@ import {
   PlusCircle,
   FileText,
   CheckCircle2,
-  Clock,
-  Phone,
-  ThumbsUp,
-  AlertCircle,
   Info,
   X,
   Star,
-  Check,
 } from 'lucide-react';
-import { BookingStatus, VendorItem, VendorPriority, VendorQuote } from '../../types';
+import { BookingStatus, VendorItem, VendorPriority } from '../../types';
 
 const STATUS_CONFIG: Record<BookingStatus, { label: string; bg: string; color: string }> = {
   researching: { label: 'Researching', bg: 'var(--bg-card-muted)', color: 'var(--text-muted)' },
@@ -174,7 +169,6 @@ export const VendorsTab: React.FC = () => {
       <div style={vendorGridStyle}>
         {filteredVendors.map(vendor => {
           const statusMeta = STATUS_CONFIG[vendor.bookingStatus];
-          const hasQuotes = vendor.quotes && vendor.quotes.length > 0;
           const preferredQuote = vendor.quotes?.find(q => q.isPreferred);
 
           return (

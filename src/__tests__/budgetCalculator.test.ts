@@ -3,7 +3,6 @@ import {
   recalculateBudget,
   generateDefaultBudgetItems,
   generateSavingRecommendations,
-  DEFAULT_ALLOCATION_WEIGHTS,
 } from '../engine/budgetCalculator';
 import { BudgetItem } from '../types';
 

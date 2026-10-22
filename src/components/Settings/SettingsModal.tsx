@@ -4,7 +4,6 @@ import {
   X,
   Settings,
   Key,
-  Cpu,
   Trash2,
   Download,
   Upload,

@@ -4,7 +4,6 @@ import {
   CategoryAllocation,
   SavingRecommendation,
   EventType,
-  EventIntake,
 } from '../types';
 
 /**
@@ -291,8 +290,8 @@ export function recalculateBudget(
  * Intelligent saving recommendations with explicit trade-offs.
  */
 export function generateSavingRecommendations(
-  eventType: EventType,
-  totalBudget: number,
+  _eventType: EventType,
+  _totalBudget: number,
   items: BudgetItem[]
 ): SavingRecommendation[] {
   const recommendations: SavingRecommendation[] = [];

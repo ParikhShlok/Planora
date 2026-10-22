@@ -1,5 +1,5 @@
 import { EventPlan, ChatMessage } from '../types';
-import { processLocalPlannerQuery, PlannerResponse } from './localPlannerEngine';
+import { processLocalPlannerQuery } from './localPlannerEngine';
 
 export interface AIProviderOptions {
   customApiKey?: string;

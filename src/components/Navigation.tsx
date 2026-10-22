@@ -7,7 +7,6 @@ import {
   Store,
   Lightbulb,
   MessageSquareCode,
-  BadgeAlert,
 } from 'lucide-react';
 
 export const Navigation: React.FC = () => {
